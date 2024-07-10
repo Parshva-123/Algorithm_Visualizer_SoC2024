@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms</title>
+    <link rel="stylesheet" href="AlgoVis.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SortMaster</label>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#selection">Selection Sort</a></li>
+            <li><a href="#insertion">Insertion Sort</a></li>
+            <li><a href="#bubble">Bubble Sort</a></li>
+            <li><a href="#merge">Merge Sort</a></li>
+            <li><a href="#quick">Quick Sort</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to Sorting Algorithms Visualiser</h1>
+            <p>Explore various sorting algorithms and their implementations along with Visualisation.</p>
+        </section>
+
+        <section id="selection">
+            <h2>Selection Sort</h2>
+            <div class="algorithm-content">
+                <div class="explanation">
+                    <h1> Explanation of the Algorithms</h1>
+                    <p>● Consider an array A with n elements.</p>
+                    <p>● We first search for the largest value in A (let us say it was at index k1) and would like to place it at index n-1.</p>
+                    <p>● However A[n-1] already contains a value, which we do not want to destroy. Hence we swap A[n-1] and A[k1].</p>
+                    <p>● Now, A[n-1] contains the same value that it would have contained in a perfectly sorted array. The rest of the array is still unsorted.</p>
+                    <p>● Now, we find the maximum element in A from index 0 to index n-2. Let us say it lies at index k2.</p>
+                    <p>● Then we want to swap A[k2] and A[n-2].</p>
+                    <p>● We proceed in this fashion: in the iteration with index i, we find the maximum element in A from the first i indices and then exchange it with the value at the (i-1)th index.</p>
+                </div>
+                <div class="code">
+                    <!-- Code will go here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="insertion">
+            <h2>Insertion Sort</h2>
+            <!-- Content for Insertion Sort -->
+        </section>
+
+        <section id="bubble">
+            <h2>Bubble Sort</h2>
+            <!-- Content for Bubble Sort -->
+        </section>
+
+        <section id="merge">
+            <h2>Merge Sort</h2>
+            <!-- Content for Merge Sort -->
+        </section>
+
+        <section id="quick">
+            <h2>Quick Sort</h2>
+            <!-- Content for Quick Sort -->
+        </section>
+    </div>
+
+    <script src="AlgoVis.js"></script>
+</body>
+</html>
